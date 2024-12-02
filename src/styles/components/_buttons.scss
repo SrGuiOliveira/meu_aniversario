@@ -1,0 +1,32 @@
+@use '../var';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+
+    &:hover {
+        filter: brightness(120%);
+        font-size: 19px;
+    }
+
+    &--primary {
+        color: var.$textColor;
+        background-color: var.$darkerBlue;
+
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

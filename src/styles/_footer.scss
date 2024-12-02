@@ -1,0 +1,8 @@
+@use 'var';
+
+.footer {
+    padding: 50px;
+    background-image: linear-gradient(var.$softGray, var.$darkBlue);
+    text-align: center;
+    
+}
